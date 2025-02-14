@@ -12,3 +12,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.head {
+  width: 300px;
+  height: 250px;
+  background: Red;
+  border-radius: 24% 27% 38% 43% / 24% 24% 29% 32%;
+}
