@@ -1,6 +1,6 @@
 :root {
-  --head-width: 300px;
-  --head-height: 250px;
+  --head-width: 250px;
+  --head-height: 200px;
 }
 
 * {
@@ -21,7 +21,7 @@ body {
 
 .horns {
   width: var(--head-width);
-  height: var(--head-height);
+  height: calc(var(--head-height) * 0.8);
   transform: rotate(10deg) translateX(14%);
   background: Blue;
 }
@@ -36,13 +36,12 @@ body {
 
 .eyes {
   width: 100%;
-  position: relative;
   display: flex;
   gap: 40px;
   padding: 0 30px; 
   justify-content: space-around;
   height: calc(var(--head-height) / 2.5);
-  transform: translateY(80px);
+  transform: translateY(75px);
   background-color: green;
 }
 
@@ -51,5 +50,27 @@ body {
   height: 100%;
   width: calc(var(--head-width) / 2);
   border-radius: 100%;
-  position: relative;
+}
+
+.body-container {
+  width: calc(var(--head-width) * 2);
+  height: calc(var(--head-height) * 1.5);
+  transform: rotate(10deg);
+  display: flex;
+  background: orange;
+}
+
+.body {
+  height: 100%;
+  width: var(--head-width);
+  background-color: black;
+  transform: rotate(-10deg);
+  border-radius: 17% 20% 34% 31% / 30% 30% 59% 58% ;
+}
+
+.arm {
+  width: calc(var(--head-width) / 2);
+  height: 50px;
+  transform: rotate(5deg);
+  background: turquoise;
 }
