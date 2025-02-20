@@ -20,16 +20,24 @@ body {
 }
 
 .horns {
-  width: var(--head-width);
-  height: calc(var(--head-height) * 0.8);
+  width: calc(var(--head-width) * 1.1);
+  height: calc(var(--head-height) * 0.9);
   transform: rotate(10deg) translateX(14%);
-  background: Blue;
+  background: transparent;
+  display: flex;
+  gap: 150px;
+}
+
+.horn {
+  width: 50%;
+  height: 100%;
+  background: white;
 }
 
 .head {
   width: var(--head-width);
   height: var(--head-height);
-  background: Red;
+  background: white;
   border-radius: 24% 27% 38% 43% / 24% 24% 29% 32%;
   transform: rotate(10deg);
 }
@@ -38,11 +46,11 @@ body {
   width: 100%;
   display: flex;
   gap: 40px;
-  padding: 0 30px; 
+  padding: 0 30px;
   justify-content: space-around;
   height: calc(var(--head-height) / 2.5);
   transform: translateY(75px);
-  background-color: green;
+  background-color: transparent;
 }
 
 .eyes .eye {
@@ -62,14 +70,14 @@ body {
 
 .body {
   height: 100%;
-  width: var(--head-width);
+  width: calc(var(--head-width) * 0.9);
   background-color: black;
   transform: rotate(-10deg);
-  border-radius: 17% 20% 34% 31% / 30% 30% 59% 58% ;
+  border-radius: 17% 20% 34% 31% / 30% 30% 59% 58%;
 }
 
 .arm {
-  width: calc(var(--head-width) / 2);
+  width: calc(var(--head-width) / 1.9);
   height: 50px;
   transform: rotate(5deg);
   background: turquoise;
