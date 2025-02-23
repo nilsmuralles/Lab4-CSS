@@ -20,17 +20,6 @@ body {
   align-items: center;
 }
 
-.horns {
-  width: calc(var(--head-width) * 1.4);
-  height: var(--head-height);
-  transform: rotate(10deg) translateX(9%) translateY(16%);
-  background: white;
-  display: flex;
-  flex-direction: column;
-  border-radius: 33% 34% 14% 26% / 45% 36% 43% 36%;
-  position: relative;
-}
-
 .horns::before {
   content: "";
   width: 150px;
@@ -40,6 +29,17 @@ body {
   transform: translateX(-50%);
   border-radius: 52% 53% 46% 34% / 43% 50% 44% 38%;
   position: absolute;
+}
+
+.horns {
+  width: calc(var(--head-width) * 1.4);
+  height: var(--head-height);
+  transform: rotate(10deg) translateX(9%) translateY(16%);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 33% 34% 14% 26% / 45% 36% 43% 36%;
+  position: relative;
 }
 
 .horns::after {
@@ -112,14 +112,34 @@ body {
 .black-parts {
   display: flex;
   flex-direction: row;
-  transform: translateX(-55px) translateY(-10px);
+  transform: translateX(-90px) translateY(-12px);
   z-index: -1;
+}
+
+.hand::before{
+  content: "";
+  position: absolute;
+  background: black;
+  height: 40px;
+  width: 20px;
+  right: 5px;
+  border-radius: 100% 100% 0% 0% / 95% 79% 0% 100% ;
+  transform: translateY(-10px);
+}
+
+.hand {
+  background: black;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  transform: translateX(65px) translateY(-35px);
 }
 
 .arm {
   background: black;
   width: calc(var(--head-width) * 0.5);
   height: 60px;
-  transform: rotate(15deg) translateX(10px) translateY(-30px);
+  transform: rotate(15deg) translateX(15px) translateY(-25px);
   border-radius: 100% 0% 0% 100% / 60% 100% 0% 55% ;
 }
