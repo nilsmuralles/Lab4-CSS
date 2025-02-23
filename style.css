@@ -31,13 +31,14 @@ body {
   position: relative;
 }
 
-.horns::before{
+.horns::before {
   content: "";
-  width: 100px;
+  width: 150px;
   height: 25px;
-  background: red;
+  background: yellow;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 52% 53% 46% 34% / 43% 50% 44% 38%;
   position: absolute;
 }
 
@@ -49,12 +50,6 @@ body {
   transform: scale(0.8);
   background: var(--bg-color);
   border-radius: 42% 31% 37% 43% / 50% 48% 44% 38%;
-}
-
-.horn {
-  width: 50%;
-  height: 100%;
-  background: white;
 }
 
 .head {
@@ -83,3 +78,33 @@ body {
   border-radius: 100%;
 }
 
+.body {
+  background: black;
+  height: var(--head-height);
+  width: calc(var(--head-width) * 0.7);
+  border-radius: 33% 34% 1% 0% / 18% 17% 30% 30%;
+}
+
+.legs {
+  display: flex;
+  background: transparent;
+  gap: 33%;
+  width: calc(var(--head-width) * 0.7);
+  height: calc(var(--head-height) * 0.5);
+}
+
+.left-leg {
+  flex: 1;
+  background: black;
+  height: 100%;
+  border-radius: 10% 100% 44% 100% / 0% 26% 74% 97%; 
+  transform: rotate(-3deg) translateX(3px) translateY(-12px);
+}
+
+.right-leg {
+  flex: 1;
+  background: black;
+  height: 100%;
+  border-radius: 10% 100% 44% 100% / 0% 26% 74% 97%; 
+  transform: rotate(-3deg) translateX(3px) translateY(-13px) scaleX(-1);
+}
