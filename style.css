@@ -33,7 +33,7 @@ body {
 
 .horns {
   width: calc(var(--head-width) * 1.4);
-  height: var(--head-height);
+  min-height: var(--head-height);
   transform: rotate(10deg) translateX(9%) translateY(16%);
   background: white;
   display: flex;
@@ -54,7 +54,7 @@ body {
 
 .head {
   width: var(--head-width);
-  height: var(--head-height);
+  min-height: var(--head-height);
   background: white;
   border-radius: 24% 27% 38% 43% / 24% 24% 29% 32%;
   transform: rotate(10deg);
