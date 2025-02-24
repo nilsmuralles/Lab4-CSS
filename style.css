@@ -145,7 +145,7 @@ body {
   transform: translateX(65px) translateY(-35px);
 }
 
-.arm {
+.hand + .arm {
   background: black;
   width: calc(var(--head-width) * 0.5);
   height: 60px;
@@ -160,4 +160,5 @@ body {
   z-index: -1;
   width: 200px;
   height: 150px;
+  border: 5px solid black;
 }
