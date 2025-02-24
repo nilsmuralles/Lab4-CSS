@@ -1,7 +1,7 @@
 :root {
   --head-width: 250px;
   --head-height: 200px;
-  --bg-color: Yellow;
+  --bg-color: #818181;
 }
 
 * {
@@ -26,7 +26,7 @@ body {
   height: 25px;
   background: var(--bg-color);
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-3px);
   border-radius: 52% 53% 46% 34% / 43% 50% 44% 38%;
   position: absolute;
 }
@@ -112,7 +112,7 @@ body {
 .black-parts {
   display: flex;
   flex-direction: row;
-  transform:  translateX(-85px) translateY(-20px);
+  transform:  translateX(10px) translateY(-20px);
   z-index: -1;
 }
 
@@ -151,4 +151,13 @@ body {
   height: 60px;
   transform: rotate(15deg) translateX(15px) translateY(-25px);
   border-radius: 100% 0% 0% 100% / 60% 100% 0% 55%;
+}
+
+.sword {
+  background: white;
+  border-radius: 100% 0% 100% 0% / 100% 0% 0% 0% ;
+  transform: translate(-440px, 120px) skew(25deg, 45deg) rotate(-5deg);
+  z-index: -1;
+  width: 200px;
+  height: 150px;
 }
